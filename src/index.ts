@@ -28,8 +28,6 @@ export const Octokit = Core.plugin(
   };
 });
 
-export type Octokit = InstanceType<typeof Octokit>;
-
 function getApiBaseUrl(): string {
   /* istanbul ignore next */
   return process.env["GITHUB_API_URL"] || "https://api.github.com";
